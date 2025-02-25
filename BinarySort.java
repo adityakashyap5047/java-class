@@ -1,6 +1,6 @@
-public class BinarySearch {
+public class BinarySort {
 
-    public static void binarySearch(int arr[]){
+    public static void binarySort(int arr[]){
         for (int i = 0; i < arr.length; i++) {
             for(int j = 0; j < arr.length - i - 1; j++){
                 if (arr[j] > arr[j+1]) {
@@ -15,7 +15,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         int arr[] = {5, 1, 2, 9, 0, 2, 6};
 
-        binarySearch(arr);
+        binarySort(arr);
 
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
