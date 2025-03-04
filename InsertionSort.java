@@ -2,8 +2,6 @@ public class InsertionSort {
 
     public static void insertionSort(int numbers[]){
 
-        int n = numbers.length;
-
         for (int i = 0; i < numbers.length; i++) {
             int key = numbers[i];
             int j = i - 1;
