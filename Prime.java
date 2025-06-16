@@ -1,6 +1,16 @@
 import java.util.*;
 
 public class Prime {
+
+    public static boolean isPrimeNum(int num){
+
+        for (int i = 2; i < Math.sqrt(num) + 1; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
     
     public static void main(String[] args) {
 
@@ -23,6 +33,13 @@ public class Prime {
         } else {
             System.out.println(num+" is not a prime number");
         }
+
+        if (isPrimeNum(num)){
+            System.out.println(num+" is a prime number");
+        } else {
+            System.out.println(num+" is not a prime number");
+        }
+        
         sc.close();
     }
 }
