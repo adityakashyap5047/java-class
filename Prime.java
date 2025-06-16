@@ -4,7 +4,7 @@ public class Prime {
 
     public static boolean isPrimeNum(int num){
 
-        for (int i = 2; i < Math.sqrt(num) + 1; i++) {
+        for (int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
                 return false;
             }
@@ -39,7 +39,7 @@ public class Prime {
         } else {
             System.out.println(num+" is not a prime number");
         }
-        
+
         sc.close();
     }
 }
